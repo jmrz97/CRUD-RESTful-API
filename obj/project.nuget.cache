@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "yv/dUxWtSJNvZ8WfXta78U0w9ijqET5lM4tRB9kiQhGDPQYjR6M/DYgGVwoZk890hO2SfOqYEDM/CWKS1XF+ZQ==",
+  "success": true,
+  "projectFilePath": "C:\\laragon\\www\\vue_pre_univo\\MÓDULO I BackEnd Básico\\05-02-23\\FastDeliveryApi\\FastDeliveryApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jrodr\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
+    "C:\\Users\\jrodr\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\jrodr\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\jrodr\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\jrodr\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\jrodr\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\jrodr\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
