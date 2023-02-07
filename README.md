@@ -15,13 +15,21 @@ Basic Command Examples
 dotnet new webapi -o FastDeliveryApi
 cd FastDeliveryApi
 dotnet run 
+dotnet ef migrations add NombreMigration
+dotnet ef database update
 ```
 
 
 `Installation and execution`
+
+```bash
+Change User & Password in appsettings.json
+"MyDbPgsql": "Server=localhost;Database=FastDeliveryDb;Port=5432;User Id=postgres;Password=root;"
+```
+
 ```bash
 git clone https://github.com/jmrz97/CRUD-RESTful-API.git
 cd FastDeliveryApi
-cp .env.example .env
+dotnet ef database update
 ```
 
