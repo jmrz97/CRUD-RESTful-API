@@ -30,6 +30,8 @@ cd FastDeliveryApi
 - Change User & Password in appsettings.json
 "MyDbPgsql": "Server=localhost;Database=FastDeliveryDb;Port=5432;User Id=postgres;Password=root;"
 
+- Execute
 dotnet ef database update
+dotnet run 
 ```
 
