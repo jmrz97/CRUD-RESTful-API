@@ -31,3 +31,13 @@ C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\
 C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\obj\Debug\net7.0\FastDeliveryApi.pdb
 C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\obj\Debug\net7.0\FastDeliveryApi.genruntimeconfig.cache
 C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\obj\Debug\net7.0\ref\FastDeliveryApi.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\bin\Debug\net7.0\Humanizer.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\bin\Debug\net7.0\System.CodeDom.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\bin\Debug\net7.0\Npgsql.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\05-02-23\FastDeliveryApi\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

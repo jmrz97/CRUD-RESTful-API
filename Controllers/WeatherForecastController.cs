@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace FastDeliveryApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("forecast")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
@@ -18,15 +18,19 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
+    [HttpGet("get-weather-forecast/{name}")]
+    public WeatherForecast Get(string name)
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        if(!string.IsNullOrWhiteSpace(name))
         {
-            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
+            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            {
+                Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                TemperatureC = Random.Shared.Next(-20, 55),
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            }).First(s => s.Summary == name);
+        }
+        WeatherForecast response = new();
+        return response;
     }
 }
