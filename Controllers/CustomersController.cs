@@ -21,4 +21,49 @@ public class CustomersController : ControllerBase
         var customers = _context.Customers.ToList();
         return Ok(customers);
     }
+
+    // public ActionResult<IEnumerable<Customer>>  GetById(int id)
+    // {
+    //     var customers = _context.Customers.Find(id);
+    //     return Ok(customers);
+    // }
+
+    [HttpGet("{id}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public ActionResult<Customer> GetById(int id)
+    {
+        var customers = _context.Customers.Find(id);
+        return customers == null ? NotFound() : customers;
+    }
+
+    [HttpPost]
+    public ActionResult<IEnumerable<Customer>>  Post(Customer customers)
+    {
+        _context.Customers.Add(customers);
+        _context.SaveChanges();
+        return Created($"/id?id={customers.Id}", customers);
+    }
+
+    [HttpPut]
+    public ActionResult<IEnumerable<Customer>>  Put(Customer customersToUpdate)
+    {
+        _context.Customers.Update(customersToUpdate);
+        _context.SaveChanges();
+        return Ok(customersToUpdate);
+    }
+
+    [HttpDelete("{id}")]
+    public ActionResult<IEnumerable<Customer>>  Delete(int id)
+    {
+        var customersToDelete = _context.Customers.Find(id);
+        if (customersToDelete == null)
+        {
+            return NotFound();
+        }
+        _context.Customers.Remove(customersToDelete);
+        _context.SaveChanges();
+        return NoContent();
+    }
+    
 }
