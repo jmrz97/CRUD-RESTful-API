@@ -23,13 +23,13 @@ dotnet ef database update
 `Installation and execution`
 
 ```bash
-Change User & Password in appsettings.json
-"MyDbPgsql": "Server=localhost;Database=FastDeliveryDb;Port=5432;User Id=postgres;Password=root;"
-```
-
-```bash
 git clone https://github.com/jmrz97/CRUD-RESTful-API.git
 cd FastDeliveryApi
+```
+```bash
+- Change User & Password in appsettings.json
+"MyDbPgsql": "Server=localhost;Database=FastDeliveryDb;Port=5432;User Id=postgres;Password=root;"
+
 dotnet ef database update
 ```
 
