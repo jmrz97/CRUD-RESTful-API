@@ -50,7 +50,7 @@ public class CustomersController : ControllerBase
     {
         _context.Customers.Update(customersToUpdate);
         _context.SaveChanges();
-        return Ok(customersToUpdate);
+        return NoContent();
     }
 
     [HttpDelete("{id}")]
