@@ -1,6 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+
 using FastDeliveryApi.Data.Configurations;
 using FastDeliveryApi.Entity;
-using Microsoft.EntityFrameworkCore;
 
 namespace FastDeliveryApi.Data;
 
