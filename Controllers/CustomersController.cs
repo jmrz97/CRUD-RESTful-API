@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using Mapster;
 
 using FastDeliveryApi.Data;
 using FastDeliveryApi.Entity;
 using FastDeliveryApi.Repositories.Interfaces;
 using FastDeliveryApi.Models;
+using FastDeliveryApi.Exeption;
 
 namespace FastDeliveryApi.Controllers;
 
@@ -31,20 +33,24 @@ public class CustomersController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateCustomer([FromBody] CreateCustomerRequest request, CancellationToken cancellationToken)
     {
-        var customer = new Customer(request.Name,
-            request.PhoneNumber,
-            request.Email,
-            request.Address
-        );
+        var customer = request.Adapt<Customer>();
+        
+        // var customer = new Customer(request.Name,
+        //     request.PhoneNumber,
+        //     request.Email,
+        //     request.Address
+        // );
         
         _customerRepository.Add(customer);
 
         await _unitOfWork.SaveChangesAsync();
 
+        var response = customer.Adapt<CustomerResponse>();
+
         return CreatedAtAction(
             nameof(GetCustomerById),
-            new { id = customer.Id },
-            customer);
+            new { id = response.Id },
+            response);
     }
 
     [HttpPut("{id:int}")]
@@ -52,13 +58,13 @@ public class CustomersController : ControllerBase
     {
         if(request.Id != id)
         {
-            return BadRequest("Body Id is not equal than Url Id");
+            throw new BadRequestException("Body Id is not equal than Url Id");
         }
 
         var customer = await _customerRepository.GetCustomerById(id);
         if(customer is null)
         {
-            return NotFound($"Customer Not Found With the Id {id}");
+            throw new NotFoundException("Customer", id);
         }
 
         customer.ChangeName(request.Name);
@@ -77,13 +83,15 @@ public class CustomersController : ControllerBase
     [HttpGet("{id:int}")]
     public async Task<IActionResult>  GetCustomerById(int id, CancellationToken cancellationToken)
     {
-        var customer = await _customerRepository.GetCustomerById(id);
+        var customer = await _customerRepository.GetCustomerById(id, cancellationToken);
         if(customer is null)
         {
-            return NotFound($"Customer Not Found With the Id {id}");
+            throw new NotFoundException("Customer", id);
         }
 
-        return Ok(customer);
+        var response = customer.Adapt<CustomerResponse>();
+
+        return Ok(response);
     }
 
     [HttpDelete("{id:int}")]

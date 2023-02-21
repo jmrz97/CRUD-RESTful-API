@@ -84,3 +84,6 @@ C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\29-01-23\FastDeliveryApi\
 C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\29-01-23\FastDeliveryApi\obj\Debug\net7.0\FastDeliveryApi.pdb
 C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\29-01-23\FastDeliveryApi\obj\Debug\net7.0\FastDeliveryApi.genruntimeconfig.cache
 C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\29-01-23\FastDeliveryApi\obj\Debug\net7.0\ref\FastDeliveryApi.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\29-01-23\FastDeliveryApi\bin\Debug\net7.0\Mapster.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\29-01-23\FastDeliveryApi\bin\Debug\net7.0\Mapster.Core.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\29-01-23\FastDeliveryApi\bin\Debug\net7.0\Newtonsoft.Json.dll

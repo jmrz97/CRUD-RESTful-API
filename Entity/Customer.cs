@@ -12,6 +12,11 @@ public class Customer : IAuditableEntity
         Address = address;
         Status = true;   
     }
+
+    public Customer()
+    {
+        
+    }
     
     public int Id { get; set; }  
     public string Name { get; private set; }  
