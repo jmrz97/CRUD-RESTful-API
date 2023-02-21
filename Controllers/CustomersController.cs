@@ -5,7 +5,7 @@ using FastDeliveryApi.Data;
 using FastDeliveryApi.Entity;
 using FastDeliveryApi.Repositories.Interfaces;
 using FastDeliveryApi.Models;
-using FastDeliveryApi.Exeption;
+using FastDeliveryApi.Exceptions;
 
 namespace FastDeliveryApi.Controllers;
 
@@ -40,6 +40,13 @@ public class CustomersController : ControllerBase
         //     request.Email,
         //     request.Address
         // );
+
+        // if(customer.Email == request.Email)
+        // {
+        //     throw new Exceptions.UniqueEmailException(request.Email);
+        // }
+
+        // customer.UniqueEmail(request.Email);
         
         _customerRepository.Add(customer);
 
@@ -65,6 +72,11 @@ public class CustomersController : ControllerBase
         if(customer is null)
         {
             throw new NotFoundException("Customer", id);
+        }
+
+        if(customer.Email == request.Email)
+        {
+            throw new Exceptions.UniqueEmailException(request.Email);
         }
 
         customer.ChangeName(request.Name);

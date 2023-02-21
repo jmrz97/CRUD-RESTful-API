@@ -1,4 +1,5 @@
 using FastDeliveryApi.Repositories.Interfaces;
+using FastDeliveryApi.Exceptions;
 
 namespace FastDeliveryApi.Entity;
 
@@ -42,6 +43,15 @@ public class Customer : IAuditableEntity
             PhoneNumber = phoneNumber;
         }
     }
+
+    // public void UniqueEmail(string email)
+    // {
+    //     if(Email == customer.email)
+    //     {
+    //         throw new Exceptions.UniqueEmailException(Email);
+    //     }
+    //     Email = email;
+    // }
 
     public void ChangeEmail(string email)
     {

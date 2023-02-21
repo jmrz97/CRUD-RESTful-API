@@ -1,4 +1,4 @@
-namespace FastDeliveryApi.Exeption;
+namespace FastDeliveryApi.Exceptions;
 
 public class NotFoundException : ApplicationException
 {

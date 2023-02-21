@@ -1,5 +1,5 @@
 using System.Net;
-using FastDeliveryApi.Exeption;
+using FastDeliveryApi.Exceptions;
 using Newtonsoft.Json;
 
 namespace FastDeliveryApi.Middleware;
@@ -47,6 +47,18 @@ public class ExceptionMiddleware
             case BadRequestException badRequestException:
                 statusCode = HttpStatusCode.BadRequest;
                 errorDetails.ErrorType = "Bad Request";
+                break;
+            case UniqueEmailException uniqueEmailException:
+                statusCode = HttpStatusCode.BadRequest;
+                errorDetails.ErrorType = "Bad Request";
+                break;
+            case NotModifiedException notModifiedException:
+                statusCode = HttpStatusCode.NotModified;
+                errorDetails.ErrorType = "Not Modified";
+                break;
+            case NoContentException noContentException:
+                statusCode = HttpStatusCode.NoContent;
+                errorDetails.ErrorType = "No Content";
                 break;
             default:
                 break;
