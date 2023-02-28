@@ -11,6 +11,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 
+builder.Services.Decorate<ICustomerRepository, CachedCustomerRepository>();
+
+builder.Services.AddMemoryCache();
+
 var connectionString = builder.Configuration.GetConnectionString("MyDbPgsql");
 builder.Services.AddDbContext<FastDeliveryDbContext>(options => {
     options.UseNpgsql(connectionString);

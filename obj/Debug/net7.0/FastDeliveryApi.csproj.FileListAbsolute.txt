@@ -87,3 +87,4 @@ C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\29-01-23\FastDeliveryApi\
 C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\29-01-23\FastDeliveryApi\bin\Debug\net7.0\Mapster.dll
 C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\29-01-23\FastDeliveryApi\bin\Debug\net7.0\Mapster.Core.dll
 C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\29-01-23\FastDeliveryApi\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\laragon\www\vue_pre_univo\MÓDULO I BackEnd Básico\29-01-23\FastDeliveryApi\bin\Debug\net7.0\Scrutor.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4uEr9Q05ZNfv9md+vI1F5Cbk11aGMaCodro1O7/9yYeX/izStsAAsCS0iKCkMdv+4cm1yYmX9jYiC8Ln7NIL5g==",
+  "dgSpecHash": "5qzQfGSCfSt7io0I4kWSKkkcu5k72eLGYOpUBocnfwfmZD/tLt+9tCSqdUPBp/R8anK+FszlShY0pbFx2UIYIg==",
   "success": true,
   "projectFilePath": "C:\\laragon\\www\\vue_pre_univo\\MÓDULO I BackEnd Básico\\29-01-23\\FastDeliveryApi\\FastDeliveryApi.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\jrodr\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\jrodr\\.nuget\\packages\\npgsql\\7.0.1\\npgsql.7.0.1.nupkg.sha512",
     "C:\\Users\\jrodr\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.1\\npgsql.entityframeworkcore.postgresql.7.0.1.nupkg.sha512",
+    "C:\\Users\\jrodr\\.nuget\\packages\\scrutor\\4.2.1\\scrutor.4.2.1.nupkg.sha512",
     "C:\\Users\\jrodr\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\jrodr\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\jrodr\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
